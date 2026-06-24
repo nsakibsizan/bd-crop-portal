@@ -69,17 +69,17 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white">
+      <section className="bg-linear-to-br from-green-900 via-green-800 to-emerald-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="max-w-3xl">
+          <div className="max-w-6xl">
             <span className="inline-block bg-green-700 text-green-100 text-xs font-semibold px-3 py-1 rounded-full mb-6 tracking-wide uppercase">
               MPhil Research · Jagannath University
             </span>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
-              Smart Fertilizer Recommendation for Bangladesh Agriculture
+              Smart Fertilizer & Crop Recommendation for Bangladesh Agriculture
             </h1>
-            <p className="font-[family-name:var(--font-hind)] text-green-200 text-lg md:text-xl mb-4">
-              বাংলাদেশের কৃষিতে স্মার্ট সার সুপারিশ ব্যবস্থা
+            <p className="font-(family-name:--font-hind) text-green-200 text-lg md:text-xl mb-4">
+              বাংলাদেশের কৃষিতে স্মার্ট সার এবং ফসল সুপারিশ ব্যবস্থা
             </p>
             <p className="text-green-100 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
               An integrated research system combining Machine Learning, Blockchain,
@@ -112,7 +112,7 @@ export default function HomePage() {
               <div key={stat.label} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-green-700">{stat.value}</div>
                 <div className="text-slate-500 text-sm mt-1">{stat.label}</div>
-                <div className="font-[family-name:var(--font-hind)] text-slate-400 text-xs">{stat.labelBn}</div>
+                <div className="font-(family-name:--font-hind) text-slate-400 text-xs">{stat.labelBn}</div>
               </div>
             ))}
           </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="font-semibold text-base">{s.title}</div>
-                    <div className={`font-[family-name:var(--font-hind)] text-sm opacity-75`}>{s.titleBn}</div>
+                    <div className={`font-(family-name:--font-hind) text-sm opacity-75`}>{s.titleBn}</div>
                     <p className="text-sm mt-2 opacity-80 leading-relaxed">{s.desc}</p>
                   </div>
                 </Link>
