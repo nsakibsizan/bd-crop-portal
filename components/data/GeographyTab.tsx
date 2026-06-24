@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Search, MapPin } from "lucide-react";
+import { useLang } from "@/lib/langContext";
 
 type GeoRow = {
   division_id: string; division_name_en: string; division_name_bn: string;
@@ -18,7 +19,7 @@ export default function GeographyTab() {
   const [search, setSearch] = useState("");
   const [divFilter, setDivFilter] = useState("");
   const [page, setPage] = useState(1);
-  const [lang, setLang] = useState<"en" | "bn">("en");
+  const { lang } = useLang();
 
   useEffect(() => {
     fetch("/data/json/geography.json")
@@ -95,12 +96,7 @@ export default function GeographyTab() {
             </option>
           ))}
         </select>
-        <button
-          onClick={() => setLang(lang === "en" ? "bn" : "en")}
-          className="px-3 py-2 rounded-md border border-green-600 text-green-700 text-sm hover:bg-green-50"
-        >
-          {lang === "en" ? "বাংলা" : "English"}
-        </button>
+
         <span className="text-slate-400 text-sm">{filtered.length.toLocaleString()} records</span>
       </div>
 

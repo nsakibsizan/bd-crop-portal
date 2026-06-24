@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X, Leaf } from "lucide-react";
+import { useLang } from "@/lib/langContext";
 
 const navLinks = [
   { href: "/", label: "Home", labelBn: "হোম" },
@@ -17,13 +18,12 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [lang, setLang] = useState<"en" | "bn">("en");
+  const { lang, toggleLang } = useLang();
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-green-700 text-lg">
             <Leaf className="w-5 h-5" />
             <span className={lang === "bn" ? "font-[family-name:var(--font-hind)]" : ""}>
@@ -31,7 +31,6 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop links */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
@@ -49,10 +48,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Lang toggle + mobile menu */}
           <div className="flex items-center gap-2">
             <button
-              onClick={() => setLang(lang === "en" ? "bn" : "en")}
+              onClick={toggleLang}
               className="px-3 py-1.5 rounded-full border border-green-600 text-green-700 text-sm font-medium hover:bg-green-50 transition-colors"
             >
               {lang === "en" ? "বাংলা" : "English"}
@@ -67,7 +65,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-slate-200 bg-white px-4 py-3 flex flex-col gap-1">
           {navLinks.map((link) => (

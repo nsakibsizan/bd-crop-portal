@@ -128,3 +128,9 @@
     @apply font-sans;
   }
 }
+
+@media print {
+  nav, footer { display: none !important; }
+  .print\:hidden { display: none !important; }
+  body { background: white !important; }
+}

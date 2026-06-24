@@ -2,12 +2,13 @@
 import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { FlaskConical, Leaf } from "lucide-react";
+import { useLang } from "@/lib/langContext";
 
 type FertRow = { name_en: string; name_bn: string; formula: string | null; type: "fertilizer" | "nutrient" };
 
 export default function FertilizersTab() {
   const [data, setData] = useState<FertRow[]>([]);
-  const [lang, setLang] = useState<"en" | "bn">("en");
+  const { lang } = useLang();
 
   useEffect(() => {
     fetch("/api/fertilizers").then((r) => r.json()).then(setData);
@@ -18,16 +19,7 @@ export default function FertilizersTab() {
 
   return (
     <div className="space-y-6">
-      <div className="flex justify-end">
-        <button
-          onClick={() => setLang(lang === "en" ? "bn" : "en")}
-          className="px-3 py-2 rounded-md border border-green-600 text-green-700 text-sm hover:bg-green-50"
-        >
-          {lang === "en" ? "বাংলা" : "English"}
-        </button>
-      </div>
-
-      {/* Fertilizers */}
+        {/* Fertilizers */}
       <div>
         <h3 className="font-semibold text-slate-700 mb-3 flex items-center gap-2">
           <FlaskConical className="w-4 h-4 text-blue-600" /> Fertilizers
