@@ -1,0 +1,152 @@
+[
+  {
+    "name_en": "Urea",
+    "formula": "CO(NH2)2",
+    "name_bn": "ইউরিয়া",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "TSP",
+    "formula": "Ca(H2PO4)2",
+    "name_bn": "টিএসপি",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "DAP",
+    "formula": "(NH4)2HPO4",
+    "name_bn": "ডিএপি",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "MoP",
+    "formula": "KCl",
+    "name_bn": "এমওপি",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "Gypsum",
+    "formula": "CaSO4. 2H2O",
+    "name_bn": "জিপসাম",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "Magnesium Sulphate",
+    "formula": "MgSO4. H2O",
+    "name_bn": "ম্যাগনেসিয়াম সালফেট",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "Zinc Sulphate (M)",
+    "formula": "ZnSO4. H2O",
+    "name_bn": "জিংক সালফেট (মনো)",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "Zinc Sulphate (H)",
+    "formula": "ZnSO4. 7H2O",
+    "name_bn": "জিংক সালফেট (হেপ্টা)",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "Boric Acid",
+    "formula": "H3BO3",
+    "name_bn": "বোরিক এসিড",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "Solubor",
+    "formula": "Na2B8O13. 4H2O",
+    "name_bn": "সলুবর",
+    "type": "fertilizer"
+  },
+  {
+    "name_en": "Calcium",
+    "formula": null,
+    "name_bn": "ক্যালসিয়াম",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Sulphur",
+    "formula": null,
+    "name_bn": "গন্ধক",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Organic Matter",
+    "formula": null,
+    "name_bn": "জৈবপদার্থ",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Copper",
+    "formula": null,
+    "name_bn": "তামা",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Zinc",
+    "formula": null,
+    "name_bn": "দস্তা",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Nitrogen",
+    "formula": null,
+    "name_bn": "নাইট্রোজেন",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Potassium",
+    "formula": null,
+    "name_bn": "পটাশিয়াম",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "pH",
+    "formula": null,
+    "name_bn": "পিএইচ",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Phosphorus(o)",
+    "formula": null,
+    "name_bn": "ফসফরাস(ও)",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Phosphorus(b)",
+    "formula": null,
+    "name_bn": "ফসফরাস(বি)",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Boron",
+    "formula": null,
+    "name_bn": "বোরন",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Magnessium",
+    "formula": null,
+    "name_bn": "ম্যাগনেসিয়াম",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Manganese",
+    "formula": null,
+    "name_bn": "ম্যাঙ্গানিজ",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Salinity",
+    "formula": null,
+    "name_bn": "লবনাক্ততা",
+    "type": "nutrient"
+  },
+  {
+    "name_en": "Iron",
+    "formula": null,
+    "name_bn": "লৌহ",
+    "type": "nutrient"
+  }
+]
