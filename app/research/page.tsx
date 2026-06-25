@@ -21,11 +21,21 @@ export default function ResearchPage() {
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h1 className="text-2xl font-bold text-slate-800">Research Details</h1>
-          <p className="font-[family-name:var(--font-hind)] text-slate-500 mt-1">গবেষণার বিবরণ</p>
+          <p className="font-(family-name:--font-hind) text-slate-500 mt-1">গবেষণার বিবরণ</p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+        {/* Title */}
+        <section className="bg-white rounded-xl border border-slate-200 p-8">
+          <h2 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+            <Target className="w-5 h-5 text-green-600" /> Title
+          </h2>
+          <p className="text-slate-600 leading-relaxed mb-4">
+            PQC Enabled Blockchain and XAI Framework for Climate-Resilient Agricultural Advisory System in Bangladesh
+          </p>
+        </section>
 
         {/* Background */}
         <section className="bg-white rounded-xl border border-slate-200 p-8">
@@ -76,7 +86,7 @@ export default function ResearchPage() {
                     <div>
                       <div className="text-xs text-slate-400 font-medium mb-1">{p.phase}</div>
                       <div className="font-semibold text-slate-800">{p.title}</div>
-                      <div className="font-[family-name:var(--font-hind)] text-slate-400 text-sm">{p.titleBn}</div>
+                      <div className="font-(family-name:--font-hind) text-slate-400 text-sm">{p.titleBn}</div>
                       <p className="text-slate-600 text-sm mt-2 leading-relaxed">{p.desc}</p>
                     </div>
                   </div>

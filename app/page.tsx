@@ -59,9 +59,12 @@ const sections = [
 ];
 
 const stats = [
-  { value: "5M+", label: "Data Records", labelBn: "ডেটা রেকর্ড" },
-  { value: "8", label: "Divisions", labelBn: "বিভাগ" },
+  { value: "70M+", label: "Data Records", labelBn: "ডেটা রেকর্ড" },
+  // { value: "8", label: "Divisions", labelBn: "বিভাগ" },
   { value: "64", label: "Districts", labelBn: "জেলা" },
+  // { value: "497", label: "Upazilas", labelBn: "উপজেলা" },
+  // { value: "7745", label: "Unions", labelBn: "ইউনিয়ন" },
+  { value: "68", label: "Crops", labelBn: "ফসল" },
   { value: "882", label: "Crop Varieties", labelBn: "ফসলের জাত" },
 ];
 

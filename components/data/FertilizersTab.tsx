@@ -23,7 +23,7 @@ export default function FertilizersTab() {
       <div>
         <h3 className="font-semibold text-slate-700 mb-3 flex items-center gap-2">
           <FlaskConical className="w-4 h-4 text-blue-600" /> Fertilizers
-          <span className="font-[family-name:var(--font-hind)] text-slate-400 font-normal text-sm">— সার</span>
+          <span className="font-(family-name:--font-hind) text-slate-400 font-normal text-sm">— সার</span>
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {fertilizers.map((f) => (
@@ -31,7 +31,7 @@ export default function FertilizersTab() {
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <div className="font-semibold text-slate-800">{lang === "en" ? f.name_en : f.name_bn}</div>
-                  <div className={`text-sm text-slate-500 ${lang === "en" ? "font-[family-name:var(--font-hind)]" : ""}`}>
+                  <div className={`text-sm text-slate-500 ${lang === "en" ? "font-(family-name:--font-hind)" : ""}`}>
                     {lang === "en" ? f.name_bn : f.name_en}
                   </div>
                 </div>
@@ -51,13 +51,13 @@ export default function FertilizersTab() {
       <div>
         <h3 className="font-semibold text-slate-700 mb-3 flex items-center gap-2">
           <Leaf className="w-4 h-4 text-green-600" /> Soil Nutrients
-          <span className="font-[family-name:var(--font-hind)] text-slate-400 font-normal text-sm">— পুষ্টি উপাদান</span>
+          <span className="font-(family-name:--font-hind) text-slate-400 font-normal text-sm">— পুষ্টি উপাদান</span>
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {nutrients.map((n) => (
             <div key={n.name_en} className="bg-white border border-slate-200 rounded-lg p-3 text-center hover:shadow-sm transition-shadow">
               <div className="font-medium text-slate-800 text-sm">{lang === "en" ? n.name_en : n.name_bn}</div>
-              <div className={`text-xs text-slate-400 mt-0.5 ${lang === "en" ? "font-[family-name:var(--font-hind)]" : ""}`}>
+              <div className={`text-xs text-slate-400 mt-0.5 ${lang === "en" ? "font-(family-name:--font-hind)" : ""}`}>
                 {lang === "en" ? n.name_bn : n.name_en}
               </div>
             </div>

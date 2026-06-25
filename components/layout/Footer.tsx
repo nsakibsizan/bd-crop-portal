@@ -18,7 +18,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-3 text-sm">Institution</h4>
             <p className="text-sm">Jagannath University</p>
-            <p className="text-sm">Department of CSE</p>
+            <p className="text-sm">Department of Computer Science and Engineering</p>
             <p className="text-sm">Dhaka, Bangladesh</p>
           </div>
           <div>

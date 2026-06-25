@@ -37,7 +37,7 @@ function SectionTitle({ en, bn }: { en: string; bn: string }) {
   return (
     <h3 className="font-semibold text-slate-700 mb-4">
       {lang === "en" ? en : bn}
-      <span className={`ml-2 font-normal text-slate-400 text-sm ${lang === "bn" ? "" : "font-[family-name:var(--font-hind)]"}`}>
+      <span className={`ml-2 font-normal text-slate-400 text-sm ${lang === "bn" ? "" : "font-(family-name:--font-hind)"}`}>
         {lang === "en" ? bn : en}
       </span>
     </h3>
@@ -169,7 +169,7 @@ export default function ChartsSection() {
                 cy="50%"
                 outerRadius={90}
                 dataKey="value"
-                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                label={({ name, percent }) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}
                 labelLine={false}
               >
                 {seasonData.map((entry, i) => (

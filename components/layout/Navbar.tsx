@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 font-bold text-green-700 text-lg">
             <Leaf className="w-5 h-5" />
-            <span className={lang === "bn" ? "font-[family-name:var(--font-hind)]" : ""}>
+            <span className={lang === "bn" ? "font-(family-name:--font-hind)" : ""}>
               {lang === "en" ? "BD Crop Portal" : "বিডি ক্রপ পোর্টাল"}
             </span>
           </Link>
@@ -37,7 +37,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors
-                  ${lang === "bn" ? "font-[family-name:var(--font-hind)]" : ""}
+                  ${lang === "bn" ? "font-(family-name:--font-hind)" : ""}
                   ${pathname === link.href
                     ? "bg-green-50 text-green-700"
                     : "text-slate-600 hover:text-green-700 hover:bg-slate-50"
@@ -73,7 +73,7 @@ export default function Navbar() {
               href={link.href}
               onClick={() => setMenuOpen(false)}
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors
-                ${lang === "bn" ? "font-[family-name:var(--font-hind)]" : ""}
+                ${lang === "bn" ? "font-(family-name:--font-hind)" : ""}
                 ${pathname === link.href
                   ? "bg-green-50 text-green-700"
                   : "text-slate-600 hover:text-green-700"

@@ -5,7 +5,7 @@ let db: Database.Database | null = null;
 
 export function getDb(): Database.Database {
   if (!db) {
-    const dbPath = path.join(process.cwd(), "public", "data", "Crop_Data__Sylhet_Output.db");
+    const dbPath = path.join(process.cwd(), "public", "data", "merged_database.db");
     
     // Create indexes first (needs write access)
     try {
@@ -16,7 +16,7 @@ export function getDb(): Database.Database {
         CREATE INDEX IF NOT EXISTS idx_upazila ON results(upazila_id);
         CREATE INDEX IF NOT EXISTS idx_union ON results(union_id);
         CREATE INDEX IF NOT EXISTS idx_crop ON results("Crop ID");
-        CREATE INDEX IF NOT EXISTS idx_variety ON results("Vaiery ID");
+        CREATE INDEX IF NOT EXISTS idx_variety ON results("Variety ID");
       `);
       writable.close();
     } catch {
