@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
     const params: string[] = [upazila_id, crop_id];
 
     if (union_id) { query += ` AND union_id = ?`; params.push(union_id); }
-    if (variety_id) { query += ` AND "Vaiery ID" = ?`; params.push(variety_id); }
+    if (variety_id) { query += ` AND "Variety ID" = ?`; params.push(variety_id); }
     if (season) { query += ` AND "Season Name EN" = ?`; params.push(season); }
 
     query += ` LIMIT 20`;

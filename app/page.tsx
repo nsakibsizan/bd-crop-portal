@@ -25,8 +25,8 @@ const sections = [
     icon: Sprout,
     color: "bg-emerald-50 text-emerald-700 border-emerald-200",
     iconBg: "bg-emerald-100",
-    title: "Fertilizer Prediction",
-    titleBn: "সার সুপারিশ",
+    title: "Fertilizer & Crop Prediction",
+    titleBn: "সার এবং ফসল সুপারিশ",
     desc: "Get location and crop-specific fertilizer recommendations secured by Blockchain and PQC.",
   },
   {
@@ -59,7 +59,7 @@ const sections = [
 ];
 
 const stats = [
-  { value: "70M+", label: "Data Records", labelBn: "ডেটা রেকর্ড" },
+  { value: "~17.5M+", label: "Data Records", labelBn: "ডেটা রেকর্ড" },
   // { value: "8", label: "Divisions", labelBn: "বিভাগ" },
   { value: "64", label: "Districts", labelBn: "জেলা" },
   // { value: "497", label: "Upazilas", labelBn: "উপজেলা" },

@@ -12,7 +12,7 @@ type CropRow = {
   "Crop Name BN": string;
   "Season Name EN": string;
   "Season Name BN": string;
-  "Vaiery ID": number;
+  "Variety ID": number;
 };
 
 type GeoRow = {

@@ -121,16 +121,35 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
 }
 
 @media print {
-  nav, footer { display: none !important; }
-  .print\:hidden { display: none !important; }
-  body { background: white !important; }
+
+  nav,
+  footer {
+    display: none !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+  }
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-family-bengali: var(--font-hind), sans-serif;
 }

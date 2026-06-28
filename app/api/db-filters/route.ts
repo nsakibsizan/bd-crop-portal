@@ -24,7 +24,7 @@ export async function GET(req: NextRequest) {
     } else if (level === "crop" && upazila_id) {
       rows = db.prepare(`SELECT DISTINCT "Crop ID" as crop_id, "Crop Name EN" as crop_name_en, "Crop Name BN" as crop_name_bn FROM results WHERE upazila_id = ? ORDER BY "Crop Name EN"`).all(upazila_id);
     } else if (level === "variety" && upazila_id && crop_id) {
-      rows = db.prepare(`SELECT DISTINCT "Vaiery ID" as variety_id, "Variety Name EN" as variety_name_en, "Variety Name BN" as variety_name_bn FROM results WHERE upazila_id = ? AND "Crop ID" = ? ORDER BY "Variety Name EN"`).all(upazila_id, crop_id);
+      rows = db.prepare(`SELECT DISTINCT "Variety ID" as variety_id, "Variety Name EN" as variety_name_en, "Variety Name BN" as variety_name_bn FROM results WHERE upazila_id = ? AND "Crop ID" = ? ORDER BY "Variety Name EN"`).all(upazila_id, crop_id);
     } else if (level === "season" && upazila_id && crop_id) {
       rows = db.prepare(`SELECT DISTINCT "Season Name EN" as season_en, "Season Name BN" as season_bn FROM results WHERE upazila_id = ? AND "Crop ID" = ?`).all(upazila_id, crop_id);
     }

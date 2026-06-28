@@ -18,7 +18,7 @@ export async function GET() {
     const cid = String(r["Crop ID"]);
     if (!varietyMap[cid]) varietyMap[cid] = [];
     varietyMap[cid].push({
-      id: r["Vaiery ID"],
+      id: r["Variety ID"],
       en: r["Variety Name EN"],
       bn: r["Variety Name BN"],
       season_en: r["Season Name EN"],

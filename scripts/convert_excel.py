@@ -7,7 +7,7 @@ os.makedirs(out_dir, exist_ok=True)
 
 xl_path = r"F:\Najmus Sakib Sizan\bd-crop-portal\public\data\Fertilizer and Nutrition List.xlsx"
 
-# Sheet 1: Fertilizer reference — two side-by-side lists
+# Sheet 1: Fertilizer reference - two side-by-side lists
 df1 = pd.read_excel(xl_path, sheet_name='Fertilizer and Nutrition')
 
 # Left side: fertilizers (source, formula, source_bn)
@@ -29,7 +29,7 @@ with open(os.path.join(out_dir, 'fertilizers.json'), 'w', encoding='utf-8') as f
     json.dump(combined.to_dict(orient='records'), f, ensure_ascii=False, indent=2)
 print(f'fertilizers.json: {len(combined)} rows ({len(fert)} fertilizers + {len(nutr)} nutrients)')
 
-# Sheet 2: Geographic hierarchy — drop any row missing key IDs
+# Sheet 2: Geographic hierarchy - drop any row missing key IDs
 df2 = pd.read_excel(xl_path, sheet_name='Div, Dis, Upz, Uni')
 df2 = df2[['division_id','division_name_en','division_name_bn',
            'district_id','district_name_en','district_name_bn',

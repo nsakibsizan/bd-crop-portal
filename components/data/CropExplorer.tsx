@@ -4,7 +4,7 @@ import { useLang } from "@/lib/langContext";
 import { Sprout, ChevronLeft, ChevronRight, Image as ImageIcon } from "lucide-react";
 
 type CropRow = {
-  "Vaiery ID": number;
+  "Variety ID": number;
   "Variety Name BN": string;
   "Variety Name EN": string;
   "Crop ID": number;
