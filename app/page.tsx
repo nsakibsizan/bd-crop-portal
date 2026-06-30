@@ -59,7 +59,7 @@ const sections = [
 ];
 
 const stats = [
-  { value: "~17.5M+", label: "Data Records", labelBn: "ডেটা রেকর্ড" },
+  { value: "~18M", label: "Data Records", labelBn: "ডেটা রেকর্ড" },
   // { value: "8", label: "Divisions", labelBn: "বিভাগ" },
   { value: "64", label: "Districts", labelBn: "জেলা" },
   // { value: "497", label: "Upazilas", labelBn: "উপজেলা" },
